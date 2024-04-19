@@ -27,7 +27,6 @@ describe("should redner Post component", () => {
     component = setUp({ created_at });
     const date = component.find(".date");
     expect(date.text()).toBe(new Date(created_at).toLocaleDateString());
-    console.log(created_at)
   })
 })
 
